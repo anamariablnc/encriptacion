@@ -1,0 +1,65 @@
+//Funcion
+function main() {
+    // String del mensaje
+    const mensajeE = "^[()`~^*/?`[()^+`-~()#[$()/~()%\\[]()}+[()[{=~¿()=$?%?!?]¡~()¿()`¬^~()[{=~()?+^[]=?()^\\{()*~¡[$[{()¡[()?=[]`\\¬]()¿()[{;+[$__~()`~]=\\]+~";
+
+    // Conocer la longitud de la frase
+    const longitud = mensajeE.length;
+    console.log("Tamaño: " + longitud);
+
+    // Convertir el string en un array de caracteres
+    const caracteres = mensajeE.split('');
+
+    // Bucle para recorrer el string
+    for (let i = 0; i < caracteres.length; i++) {
+        // Verificar si el carácter es un paréntesis para hacer un salto de línea
+        if (caracteres[i] === '(' || caracteres[i] === ')') {
+            console.log();  // Salto de línea
+        } else if (caracteres[i] === ']') {
+            console.log("n");
+        } else if (caracteres[i] === '[') {
+            console.log("e");
+        } else if (caracteres[i] === '?') {
+            console.log("a");
+        } else if (caracteres[i] === '\\') {
+            console.log("i");
+        } else if (caracteres[i] === '~') {
+            console.log("o");
+        } else if (caracteres[i] === '+') {
+            console.log("u");
+        } else if (caracteres[i] === '^') {
+            console.log("m");
+        } else if (caracteres[i] === '$') {
+            console.log("r");
+        } else if (caracteres[i] === '¿') {
+            console.log("y");
+        } else if (caracteres[i] === '{') {
+            console.log("s");
+        } else if (caracteres[i] === '=') {
+            console.log("t");
+        } else if (caracteres[i] === '`') {
+            console.log("c");
+        } else if (caracteres[i] === '-') {
+            console.log("h");
+        } else if (caracteres[i] === '*') {
+            console.log("p");
+        } else if (caracteres[i] === '/') {
+            console.log("l");
+        } else if (caracteres[i] === '#') {
+            console.log("v");
+        } else if (caracteres[i] === '%') {
+            console.log("b");
+        } else if (caracteres[i] === '}') {
+            console.log("q");
+        } else if (caracteres[i] === '!') {
+            console.log("j");
+        } else if (caracteres[i] === '¡') {
+            console.log("d");
+        } else {
+            console.log("x");  // Añadir 'x' antes de cada carácter no definido
+        }
+    }
+}
+
+
+main();
