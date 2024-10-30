@@ -1,1 +1,3 @@
-# encriptacion
+Ejercicio frase Encriptada
+
+Siento mucho el codigo que van a ver a continuacion...
